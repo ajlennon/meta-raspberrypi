@@ -6,6 +6,10 @@ SECTION = "kernel"
 LICENSE = "GPLv2"
 LIC_FILES_CHKSUM = "file://COPYING;md5=d7810fab7487fb0aad327b76f1be7cd7"
 
+SRC_URI += " \
+        file://build-in-audio.cfg \
+        "
+
 COMPATIBLE_MACHINE = "raspberrypi"
 
 PV = "${LINUX_VERSION}+git${SRCREV}"
